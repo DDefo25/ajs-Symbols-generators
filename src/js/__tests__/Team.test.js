@@ -1,11 +1,11 @@
 import Team from "../Team";
 
 test("Добавление персонажа в команду", () => {
-    const expecting = [{ name: "Ivan" }];
+    const expecting = new Set([ {name: "Ivan"} ]);
     const team = new Team();
     const char = { name: "Ivan" };
     team.add(char);
-    expect(team.toArray()).toEqual(expecting);
+    expect(team.members).toEqual(expecting);
 });
 
 test("Добавление нескольких персонажей в команду", () => {
