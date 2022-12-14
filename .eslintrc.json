@@ -15,6 +15,7 @@
     "linebreak-style": ["error", "windows"],
     "indent": ["error", 4],
     "no-unused-vars": "off",
-    "no-param-reassign": ["error", { "props": false }]
+    "no-param-reassign": ["error", { "props": false }],
+    "no-underscore-dangle": ["error", { "allowAfterThis": true }]
   }
 }

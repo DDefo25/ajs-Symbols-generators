@@ -20,4 +20,8 @@ export default class Team {
     toArray() {
         return [...this.members];
     }
+
+    [Symbol.iterator]() {
+        return this.members.values();
+    }
 }
