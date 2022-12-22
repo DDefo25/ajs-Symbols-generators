@@ -22,9 +22,8 @@ export default class Team {
     }
 
     * [Symbol.iterator]() {
-        const iterable = this.members.values();
-        for (let i = 0; i < this.members.size; i += 1) {
-            yield iterable.next().value;
+        for (let member of this.members) {
+            yield member;
         }
     }
 }
